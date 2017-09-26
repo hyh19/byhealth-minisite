@@ -7,11 +7,4 @@ services:
     ports:
       - "80"
     volumes:
-      - /home/byhealth/tangchen:/var/www/html
-  mysql:
-    image: mysql:5.6
-    restart: always
-    ports:
-      - "3306"
-    environment:
-      MYSQL_ROOT_PASSWORD: 123456
+      - /data/web/tangchen:/var/www/html
